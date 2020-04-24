@@ -1,3 +1,20 @@
+/*
+COLORS
+
+Primary: #eb2f64
+Primary light: #FF3366
+Primary dark: #BA265D
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
 :root {
   --color-primary: #eb2f64;
   --color-primary-light: #ff3366;
@@ -21,10 +38,6 @@
 *::before {
   box-sizing: inherit; }
 
-::selection {
-  background-color: var(--color-primary);
-  color: white; }
-
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
@@ -42,7 +55,8 @@ body {
   min-height: 100vh; }
 
 .container {
-  max-width: 100%;
+  max-width: 120rem;
+  margin: 8rem auto;
   background-color: var(--grey-light-2);
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   min-height: 50rem; }
@@ -117,6 +131,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; }
+
+::selection {
+  background-color: var(--color-primary);
+  color: white; }
 
 .logo {
   height: 3.35rem;
